@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <div class="user-info">
+            <span>Имя пользователя</span>
+            <img src="img/profile.svg" alt="Профиль">
+            <img src="img/exit.svg" alt="Выход">
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <video class="video" controls>
+                <source src="https://xn--80aaej1a3b.xn--p1ai/wp-content/uploads/video2.mp4" type="video/mp4">
+                <source src="https://xn--80aaej1a3b.xn--p1ai/wp-content/uploads/video2.mp4" type="video/webm">
+                <source src="https://xn--80aaej1a3b.xn--p1ai/wp-content/uploads/video2.mp4" type="video/ogg">
+                Ваш браузер не поддерживает видео тег.
+                <div class="video-loader"></div>
+                <button class="video-play-button"></button>
+            </video>
+            <div id="content">
+                <div class="buttons-container">
+                    <button id="chat-btn" class="toggle-button active">Чат</button>
+                    <button id="qa-btn" class="toggle-button">Вопрос / ответ</button>
+                </div>
+                <div id="chat-container" class="container">
+                    <ul class="chat-messages">
+                    </ul>
+                    <div class="show-chat-input-button-container">
+                        <button id="show-chat-input-button">Хотите отправить сообщение? <br> Кликните на эту кнопку!</button>
+                    </div>
+                    <div id="chat-input-container" class="hidden">
+                        <form class="chat-form">
+                            <div class="input-container">
+                                <input type="text" id="chat-input" placeholder="Текст">
+                                <span class="emoji-icon"></span>
+                            </div>
+                            <button type="submit" class="chat-submit-button">Отправить</button>
+                        </form>
+                        <div class="chat-author-container">
+                            <span class="chat-author">Имя в чате: <span id="chat-author-name">Аноним</span></span>
+                            <input type="text" id="author-input" class="author-input" style="display: none;">
+                            <button class="edit-author-button">Ред.</button>
+                            <button class="save-author-button" style="display: none">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="qa-container" class="container">
+                    <p id="qa-text">Тут должен быть вопрос-ответ...</p>
+                </div>
+            </div>
+        <script src="js/video.js"></script>
+        <script src="js/chat.js"></script>
+    </main>
+<footer></footer>
+</body>
+</html>

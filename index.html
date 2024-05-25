@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание YADRO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="img/logo.svg" alt="logo">
+</header>
+<main>
+    <div class="button-container">
+        <button id="registration-btn" class="toggle-button active">Регистрация</button>
+        <button id="recovery-btn" class="toggle-button">Код доступа</button>
+    </div>
+    <div class="form">
+        <div class="form-container" id="registration-form-container">
+            <h2>Данные для авторизации</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="login">Электронная почта</label>
+                    <div class="input-container">
+                        <input type="email" id="login" name="username" placeholder="Ваша почта" required>
+                        <img class="required" src="img/required.svg" alt="required">
+                    </div>
+                </div>
+                <h2>Прочие данные</h2>
+                <div class="form-group">
+                    <label for="lastname">Фамилия</label>
+                    <div class="input-container">
+                        <input type="text" id="lastname" name="lastname" placeholder="Ваша фамилия" required>
+                        <img class="required" src="img/required.svg" alt="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Имя</label>
+                    <div class="input-container">
+                        <input type="text" id="firstname" name="firstname" placeholder="Ваше имя" required>
+                        <img class="required" src="img/required.svg" alt="required">
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Отправить</button>
+                <p class="note">* поле, обязательное для заполнения</p>
+            </form>
+        </div>
+        <div class="form-container" id="recovery-form-container">
+            <form action="#" method="post" id="recovery-form">
+                <div class="form-group">
+                    <label for="email" id="label-text">Укажите электронную почту для восстановления кода</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" required>
+                        <img class="required" src="img/required.svg" alt="required">
+                    </div>
+                </div>
+                <button type="submit" class="submit-button" id="recovery-button">Отправить код</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/formSwitcher.js"></script>
+</main>
+<footer></footer>
+</body>
+</html>
