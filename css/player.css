@@ -16,7 +16,7 @@ header .user-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 100px 0;
 }
 
 .video {
